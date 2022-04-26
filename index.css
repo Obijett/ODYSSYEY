@@ -20,8 +20,9 @@ body
 .intro-bar a
 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 5vh;
+    font-size: 6vh;
     padding-left:5vh;
+    cursor: pointer;
    
     /*faz com que a fonte "suma"*/
     color:transparent; 
