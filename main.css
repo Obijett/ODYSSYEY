@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{    
+    background-color: white;
+}
+
+.intro-bar
+{
+    height: 60px;
+    width: 100vw;
+    background-color: #22061a;
+}
+
+.intro-bar a
+{
+    font-family: 'Bebas Neue', cursive;
+    font-size: 7vh;
+    padding-left:5vh;
+   
+    /*faz com que a fonte "suma"*/
+    color:transparent; 
+
+    /*faz o efeito degrade comecando do lado direito para o esquerdo,da cor mais clara mais mais escura*/
+    background-image: linear-gradient(to left,#FFC300,#FF5733,#C70039,#900C3F);
+    
+    /*transpassa o fundo degrade para acor do texto*/
+    -webkit-background-clip: text ;
+
+    /*cria a animacao e define o tempo e o tipo de duracao (linear e inifinita)*/
+    animation: anima_01 5s linear infinite;
+    -webkit-background-size:500%;
+    background-size: 500%;
+}
+ @keyframes anima_01
+ {
+    0%{background-position:0 100%;}    /*0% tempo inicial*/
+    50%{background-position:100% 0;}   /*50% tempo meio*/
+    100%{background-position: 0 100%;} /*100% tempo final*/
+ }
+
+ .menu-bar
+ {
+     background-color: #900C3F;
+     height: 5vh;
+ }
+.menu-bar ul
+{
+    display:flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.menu-bar ul li
+{
+    display:flex;
+    /*PADDING ORDEM TOP,RIGHT*/
+    padding: 5px 25vh 25vh 0px;
+    font-family: 'Bebas Neue', cursive;
+    font-size: 3vh;
+    color: #22061a;
+    
+}
