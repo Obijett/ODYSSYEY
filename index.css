@@ -22,7 +22,7 @@ body
     font-family: 'Bebas Neue', cursive;
     font-size: 6vh;
     padding-left:5vh;
-    cursor: pointer;
+    cursor: default;
    
     /*faz com que a fonte "suma"*/
     color:transparent; 
