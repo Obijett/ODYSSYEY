@@ -15,12 +15,14 @@ body
     height: 60px;
     width: 100vw;
     background-color: #22061a;
+    flex-direction: row;
+    justify-content: center;
 }
 
 .intro-bar a
 {
     font-family: 'Bebas Neue', cursive;
-    font-size: 6vh;
+    font-size: 4vh;
     padding-left:5vh;
     cursor: default;
    
